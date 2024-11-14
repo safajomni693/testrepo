@@ -1,0 +1,136 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOB+YH+43WYwdGM+MPsGu/O",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/safajomni693/testrepo/blob/main/orient%C3%A9e-objet\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 4,
+      "metadata": {
+        "id": "U8-CN3wjAwZt"
+      },
+      "outputs": [],
+      "source": [
+        "class Personne:\n",
+        "    def __init__(self, nm, pm, ag, lieu):  # Méthode constructeur\n",
+        "        self.nom = nm\n",
+        "        self.prenom = pm\n",
+        "        self.age = ag\n",
+        "        self.ville = lieu\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Création d'une instance de la classe Personne\n",
+        "p1 = Personne(\"Safa\", \"Jomni\", 23, \"tunis\")\n",
+        "\n",
+        "# Accès aux attributs\n",
+        "print(p1.nom)  # Safa\n",
+        "print(p1.prenom)  # Jomni\n",
+        "print(p1.age)  # 23\n",
+        "print(p1.ville)  # tunis\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B8miz-KHDB0U",
+        "outputId": "adc0f335-dc64-49c5-b05b-911434dcd36d"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Safa\n",
+            "Jomni\n",
+            "23\n",
+            "tunis\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "p1 = Personne(\"Safa\", \"Jomni\", 23, \"tunis\")\n",
+        "print(\"je suis\",p1.nom,p1.prenom,\"j'ai\",p1.age,\"j'habite à\",p1.ville)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "cGlnkzKqJOXc",
+        "outputId": "5abecda5-af04-4aaf-c81e-48b481b66ce0"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "je suis Safa Jomni j'ai 23 j'habite à tunis\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "p2 = Personne(\"Safa\", \"Jomni\", 23, \"tunis\")\n",
+        "n=str(input(\"donner votre nom\"))\n",
+        "p=str(input(\"donner votre prenom\"))\n",
+        "a=int(input(\"donner votre age\"))\n",
+        "l=str(input(\"donner votre ville\"))\n",
+        "p2=Personne(n,p,a,l)\n",
+        "print(\"je suis\",p2.nom,p2.prenom,\"j'ai\",p2.age,\"j'habite à\",p2.ville)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z9r2p8xhL83a",
+        "outputId": "5ed63273-9cfe-4525-da71-9bbbf96e7719"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "donner votre nomsafa\n",
+            "donner votre prenomjomni\n",
+            "donner votre age23\n",
+            "donner votre villetunis\n",
+            "je suis safa jomni j'ai 23 j'habite à tunis\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
